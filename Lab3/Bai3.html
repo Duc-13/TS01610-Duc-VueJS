@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="Lab3Index.html">
+          <img src="images/logo-energy-pilates.png" style="width: 150px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Lab3ChuyenMuc.html">
+                <i class="fa-solid fa-list"></i> Bài viết
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-film"></i> Video
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-circle-info"></i> Giới thiệu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-calendar-days"></i> Sự kiện
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+              >
+                <i class="fa-solid fa-user"></i> Tài khoản
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tiếng Việt</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tiếng Anh</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid px-5 py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4 class="text-primary mb-3">Chuyên mục</h4>
+          <div class="list-group mb-4 shadow-sm">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+            >
+              Chế độ tập <span class="badge bg-primary rounded-pill">14</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-primary"
+            >
+              Chế độ dinh dưỡng
+              <span class="badge bg-primary rounded-pill">15</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+            >
+              Cẩm nang cuộc sống
+              <span class="badge bg-primary rounded-pill">8</span>
+            </a>
+          </div>
+
+          <h4 class="text-primary mb-3">Bài viết nổi bật</h4>
+
+<div class="card p-3 shadow-sm border-0">
+  <ul class="list-unstyled mb-0">
+
+    <!-- ITEM 1 -->
+    <li class="d-flex mb-3">
+      <img
+        src="images/spinach_300x300.jpg"
+        width="60"
+        height="60"
+        class="rounded me-3 object-fit-cover"
+      />
+      <div>
+        <div class="fw-bold small mb-1">
+          Lợi ích khi ăn rau mỗi ngày
+        </div>
+        <div class="small text-muted">
+          Tiêu thụ rau xanh hàng ngày sẽ giúp tăng cường thị lực,
+          kiểm soát cân nặng, ngăn ngừa ung thư ...
+        </div>
+      </div>
+    </li>
+
+    <!-- ITEM 2 -->
+    <li class="d-flex mb-3">
+      <img
+        src="images/orange_300x300.jpg"
+        width="60"
+        height="60"
+        class="rounded me-3 object-fit-cover"
+      />
+      <div>
+        <div class="fw-bold small mb-1">
+          9 tác dụng tuyệt vời của quả cam
+        </div>
+        <div class="small text-muted">
+          Cam tự hào về khả năng chống lão hóa mạnh mẽ nhờ hàm lượng
+          chất chống oxy hóa cao ...
+        </div>
+      </div>
+    </li>
+
+    <!-- ITEM 3 -->
+    <li class="d-flex">
+      <img
+        src="images/sesameoil_300x300.jpg"
+        width="60"
+        height="60"
+        class="rounded me-3 object-fit-cover"
+      />
+      <div>
+        <div class="fw-bold small mb-1">
+          10 công dụng bất ngờ từ dầu dừa
+        </div>
+        <div class="small text-muted">
+          Dầu dừa như một loại kem dưỡng ẩm tự nhiên cho cơ thể,
+          giúp việc sản xuất collagen trong các tế bào ...
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+        </div>
+
+        <div class="col-md-8">
+          <h4 class="text-primary mb-3">Tất cả bài viết</h4>
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="border rounded p-2 mb-3">
+                  <h6 class="fw-bold">
+                    Phương pháp tập Pilates phục hồi cột sống
+                    <small class="text-muted">
+                      <i class="fa-solid fa-comment"></i> 16
+                    </small>
+                  </h6>
+                  <hr />
+                  <img
+                    src="images/tap-piltes.jpg"
+                    class="img-fluid rounded mb-2"
+                  />
+                  <p class="small text-muted">
+                    Ngoài việc giup duy trì voc dáng, cải thiện sự
+linh hoạt, dẻo dai, các bải tập Pilates còn có
+khả năng trị đau lưng, là giải pháp hữu hiệu
+để phục hồi chấn thương cột sống.
+                  </p>
+                </div>
+              </div>
+            <div class="col-lg-6">
+                <div class="border rounded p-2 mb-3">
+                  <h6 class="fw-bold">
+                    Đây là những gì 1 giờ Tập Pilates có thể làm cho cơ thể của bạn
+                    <small class="text-muted">
+                      <i class="fa-solid fa-comment"></i> 8
+                    </small>
+                  </h6>
+                  <hr />
+                  <img
+                    src="images/tap-pilates1.jpg"
+                    class="img-fluid rounded mb-2"
+                  />
+                  <p class="small text-muted">
+                    Được thiết kế để xây dựng cơ bắp săn chắc,
+khỏe mạnh hơn, bài tập này đã trở thành một
+cái tên quen thuộc nhờ có rất nhiều người
+nổi tiếng theo dõi.
+                  </p>
+                </div>
+              </div>
+            <div class="col-lg-6">
+                <div class="border rounded p-2 mb-3">
+                  <h6 class="fw-bold">
+                    Tập Pilates có thể cải thiện sức
+khoe tim mạch của bạn
+                    <small class="text-muted">
+                      <i class="fa-solid fa-comment"></i> 5
+                    </small>
+                  </h6>
+                  <hr />
+                  <img
+                    src="images/tim-mach.jpg"
+                    class="img-fluid rounded mb-2"
+                  />
+                  <p class="small text-muted">
+                    Tập Pilates không chỉ giúp bạn cổ một cơ thể
+khỏe mạnh và linh hoạt mà còn có nhiều lợi
+ích cho sức khỏe tim mạch. Bải viết này sẽ
+tim hiểu sâu hơn về tác động tích cực của
+việc tập Pilates đối với sức khỏe tim mạch.
+                  </p>
+                </div>
+              </div>
+            <div class="col-lg-6">
+                <div class="border rounded p-2 mb-3">
+                  <h6 class="fw-bold">
+                    EAT CLEAN: Nên Và Không Nên Ăn
+Thực Phẩm Nào?
+                    <small class="text-muted">
+                      <i class="fa-solid fa-comment"></i>3
+                    </small>
+                  </h6>
+                  <hr />
+                  <img
+                    src="images/eat-clean.png"
+                    class="img-fluid rounded mb-2"
+                  />
+                  <p class="small text-muted">
+                    Chúng ta luôn chú trọng lựa chọn thực phẩm
+sạch và duy trì lối sống lành mạnh. Vậy chế
+độ ăn Eat clean nên và không nên ăn gì trong
+thực đơn hang ngày để cân bằng tháp dinh
+dưỡng cho cơ thế?
+                  </p>
+                </div>
+              </div>
+
+          <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
