@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 4 - Chi tiết bài viết</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="Lab3Index.html">
+          <img src="images/logo-energy-pilates.png" style="width: 150px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Lab3ChuyenMuc.html">
+                <i class="fa-solid fa-list"></i> Bài viết
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-film"></i> Video</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-circle-info"></i> Giới thiệu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-calendar-days"></i> Sự kiện
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-user"></i> Tài khoản
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Đăng ký thành viên</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tiếng Việt</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tiếng Anh</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-8">
+          <h3 class="text-primary fw-bold mb-4">
+            Phương pháp tập Pilates giúp phục hồi chấn thương cột sống
+          </h3>
+
+          <img
+            src="images/tap-pilates1.jpg"
+            class="img-fluid rounded mb-4 shadow-sm w-100"
+            alt="Pilates"
+          />
+
+          <p class="text-muted">
+            Tập Pilates có thể vẫn còn khá xa lạ với người Việt,
+            nhưng tại các nước phương Tây thì đây chính là phương pháp tập thể
+            dục giúp duy trì vóc dáng, tăng cường ý chí và cải thiện sự linh
+            hoạt. Đặc biệt, các bài tập Pilates còn có khả năng trị
+            đau lưng, là giải pháp hữu hiệu để phục hồi chấn thương cột
+            sống.
+          </p>
+
+          <h5 class="text-primary fw-bold mt-4">
+            Pilates giúp phục hồi chấn thương cột sống nhanh chóng
+          </h5>
+
+          <p>
+            Một trong những căn bệnh ngày càng phổ biến, đặc biệt là dân văn
+            phòng, đó là đau lưng, thoát vị đĩa đệm. Tuy nhiên, nếu
+            điều trị không đúng cách có thể dẫn đến nhiều biến chứng nguy
+            hiểm.
+          </p>
+
+          <img
+            src="images/tap-piltes.jpg"
+            class="img-fluid rounded mb-4 shadow-sm w-100"
+            alt="Pilates Exercises"
+          />
+
+          <h6 class="fw-bold">Phương pháp tập Pilates Cat Cow</h6>
+          <p class="mb-2">Các bước thực hiện:</p>
+          <ul class="ms-3">
+            <li>
+              Bắt đầu với tư thế 4 điểm. Vai và cổ tay phải thẳng hàng và vuông
+              góc với thảm.
+            </li>
+            <li>Hít vào, võng lưng, nâng cằm lên, mở rộng ngực.</li>
+            <li>Thở ra, cong xương cụt, nâng cong lưng.</li>
+            <li>Lặp lại động tác từ 5–7 lần.</li>
+          </ul>
+
+          <h6 class="fw-bold mt-4">Lời kết</h6>
+          <p>
+            Trên đây là phương pháp tập Pilates giúp phục hồi chấn thương cột
+            sống nhanh chóng. Bạn cần duy trì tập luyện đều đặn và
+            kết hợp chế độ ăn uống khoa học.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 p-3 mb-4">
+            <h6 class="fw-bold mb-3">Bình luận bài viết tại đây</h6>
+            <textarea
+              class="form-control mb-3"
+              rows="3"
+              [cite_start]placeholder="Nhập bình luận của bạn]"
+            ></textarea>
+            <button class="btn btn-success w-100">
+              Gửi bình luận
+            </button>
+          </div>
+
+          <div class="card shadow-sm border-0 p-3">
+            <h6 class="fw-bold border-bottom pb-2">
+              Danh sách các bình luận:]
+            </h6>
+            <ul class="list-unstyled small mt-2">
+              <li class="mb-2 border-bottom pb-1">
+                <strong>Bình An:</strong> Bài viết rất hữu ích!
+              </li>
+              <li>
+                <strong>Bình An:</strong> Cảm ơn những chia sẻ bổ ích.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
