@@ -3,11 +3,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 import PostListView from '../view/PostListView.vue'
 import TaiKhoan from '../view/TaiKhoan.vue'
 import TrangChu from '../view/TrangChu.vue'
+import PostDetailView from '../view/PostDetailView.vue'
 
 const routes = [
   {
     path: '/',
-    redirect: 'home',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
+    name: 'home',
     component: TrangChu
   },
   {
@@ -19,6 +24,11 @@ const routes = [
     path: '/profile',
     name: 'profile',
     component: TaiKhoan
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: PostDetailView
   }
 ]
 

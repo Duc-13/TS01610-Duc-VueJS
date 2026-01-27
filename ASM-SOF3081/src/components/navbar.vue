@@ -2,8 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
         <div class="container-fluid px-4">
             <!-- LOGO -->
-            <router-link to="/home" class="navbar-brand d-flex align-items-center">
-
+            <router-link class="nav-link navbar-brand d-flex align-items-center" to="/home">
                 <img src="/images/logo-energy-pilates.png" alt="Energy Pilates" height="40" class="me-2" />
             </router-link>
 
@@ -23,24 +22,22 @@
 
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-circle-info me-1"></i> Giới thiệu
-                        </a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             <i class="fa-solid fa-user me-1"></i> Tài khoản
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#" @click.stop.prevent="openAuthModal">
-                                    Đăng nhập / Đăng ký
+                                <a class="dropdown-item" href="#" @click.stop.prevent="openDangNhap">
+                                    Đăng nhập
                                 </a>
-
-                                <AuthModal :show="showAuthModal" @close="showAuthModal = false" />
-
+                                <DangNhap :show="showDangNhap" @close="showDangNhap = false" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" @click.stop.prevent="openDangKy">
+                                    Đăng ký
+                                </a>
+                                <DangKy :show="showDangKy" @close="showDangKy = false" />
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">Đổi mật khẩu</a>
@@ -74,12 +71,17 @@
 
 <script setup>
 import { ref } from 'vue'
-import AuthModal from './AuthModal.vue'
+import DangKy from './DangKy.vue'
+import DangNhap from './DangNhap.vue'
 
-const showAuthModal = ref(false)
+const showDangNhap = ref(false)
+const openDangNhap = () => {
+    showDangNhap.value = true
+}
 
-const openAuthModal = () => {
-    showAuthModal.value = true
+const showDangKy = ref(false)
+const openDangKy = () => {
+    showDangKy.value = true
 }
 </script>
 

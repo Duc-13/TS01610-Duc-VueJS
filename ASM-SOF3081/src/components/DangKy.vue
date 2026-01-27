@@ -5,7 +5,7 @@
             <div class="modal-content p-4">
                 <!-- HEADER -->
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h5 class="fw-bold mb-0">ĐĂNG NHẬP / ĐĂNG KÝ</h5>
+                    <h5 class="fw-bold mb-0">ĐĂNG KÝ</h5>
                     <button class="btn-close" @click="close"></button>
                 </div>
 
@@ -17,16 +17,10 @@
                             Đăng ký
                         </button>
                     </li>
-                    <li class="nav-item">
-                        <button class="nav-link" :class="{ active: tab === 'login' }" @click="tab = 'login'"
-                            type="button">
-                            Đăng nhập
-                        </button>
-                    </li>
                 </ul>
 
                 <!-- REGISTER -->
-                <div v-if="tab === 'register'">
+                <div>
                     <h4 class="mb-3">Form Đăng Ký</h4>
                     <input class="form-control mb-2" placeholder="Họ và tên" />
                     <input class="form-control mb-2" placeholder="Email" />
@@ -34,14 +28,6 @@
                     <input type="password" class="form-control mb-2" placeholder="Mật khẩu" />
                     <input type="password" class="form-control mb-3" placeholder="Xác nhận mật khẩu" />
                     <button class="btn btn-success w-100">Đăng ký</button>
-                </div>
-
-                <!-- LOGIN -->
-                <div v-else>
-                    <h4 class="mb-3">Form Đăng Nhập</h4>
-                    <input class="form-control mb-2" placeholder="Email" />
-                    <input type="password" class="form-control mb-3" placeholder="Mật khẩu" />
-                    <button class="btn btn-primary w-100">Đăng nhập</button>
                 </div>
             </div>
         </div>
