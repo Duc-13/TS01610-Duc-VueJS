@@ -1,53 +1,53 @@
 <template>
-    <div class="container-mt5">
+    <div class="container mt-5">
         <div class="row">
-            <form @submit.prevent="submitForm" class="col-sm-4">
+            <div class="col-sm-4">
                 <h3>Thêm học sinh</h3>
-                <div class="mb-3 mt-3">
-                    <label for="name">Ho tên :</label>
-                    <input type="text" class="form-control" v-model="student.name" id="name" required />
-                </div>
+                <form @submit.prevent="submitForm">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Họ tên:</label>
+                        <input type="text" class="form-control" v-model="student.name" id="name" required />
+                    </div>
 
-                <div class="mb-3">
-                    <label for="score">Điểm: </label>
-                    <input type="number" max="10" min="0" class="form-control" v-model="student.score" id="score"
-                        required />
+                    <div class="mb-3">
+                        <label for="score" class="form-label">Điểm:</label>
+                        <input type="number" max="10" min="0" class="form-control" v-model="student.score" id="score" required />
+                    </div>
 
-                </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Ngày sinh:</label>
+                        <input type="date" class="form-control" v-model="student.dob" id="dob" required />
+                    </div>
 
-                <div class="mb-3">
-                    <label for="dob">Ngày sinh :</label>
-                    <input type="date" class="form-control" v-model="student.dob" id="dob" required />
-                </div>
+                    <button type="submit" class="btn btn-success">
+                        {{ isEditing ? 'Cập nhật' : 'Thêm' }}
+                    </button>
+                </form>
+            </div>
 
-                <button type="submit" class="btn btn-success">{{ isEditing ? 'Cập nhật' : 'Thêm' }}</button>
-            </form>
-            <h3>Danh sách học sinh</h3>
-            <table class="table table-hover col-sm-8">
-                <thead>
-                    <tr>
-                        <th>Họ và tên</th>
-                        <th>Điểm</th>
-                        <th>Ngày sinh</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(stu, index) in students" :key="index">
-                        <td>{{ stu.name }}</td>
-                        <td>{{ stu.score }}</td>
-                        <td>{{ stu.dob }}</td>
-                        <td>
-                            <button class="btn btn-warning" @click="editstudent(index)">Sửa</button>
-                        </td>
-                        <td>
-
-                            <button class="btn btn-danger" @click="deletestudent(index)">Xóa</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="col-sm-8">
+                <h3>Danh sách học sinh</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Họ và tên</th>
+                            <th>Điểm</th>
+                            <th>Ngày sinh</th>
+                            <th colspan="2"></th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(stu, index) in students" :key="index" class="align-middle">
+                            <td>{{ stu.name }}</td>
+                            <td>{{ stu.score }}</td>
+                            <td>{{ stu.dob }}</td>
+                            <td class="text-end">
+                                <button class="btn btn-warning btn-sm me-2" @click="editstudent(index)">Sửa</button>
+                                <button class="btn btn-danger btn-sm" @click="deletestudent(index)">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </template>
